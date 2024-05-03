@@ -1,0 +1,114 @@
+.my_self{
+    display:flex;
+    padding: 20px;
+    flex-wrap:wrap;
+    align-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto 72px;
+}
+#naving{
+    padding: 20px;
+    background-color:rgba(153 153 153 / 50%);
+}
+h2 {
+    text-align: left;
+    padding:0px;
+    color: rgb(0 0 0 / 100%); /* rgb(0 0 0 / 50%) ->  recomendado el 50% es la opacidad*/
+    border-radius: 12px; /* currentColor toma el color del texto*/
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(93 93 93 / 100%);
+    padding:0px;
+
+}
+#image_net{
+    height:26px;
+    width:26px;
+    
+}
+.link{ /*sintaxis para dar estilos referenciando al atributo class*/
+    color:red;
+}
+.social_networks{
+    padding: 10pxa;
+}
+.social_net{
+    display: inline-flex; /* Usa flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    width: 35px; /* O el tamaño deseado */
+    height: 32px; /* O el tamaño deseado */
+    border: 1px solid rgb(87 87 87 /50% );
+    border-radius: 8px;
+    opacity: 50%;
+}
+.social_net:hover{
+    background-color:rgba(153 153 153 / 15%);
+    opacity: 100%;
+}
+/*.social_networks{
+}*/
+#show{ /*El numeral indica que es un id*/
+    background:rgb(117, 132, 97);
+    border-radius: 15px;
+    border: 0px;
+    background: red !important /*El important se salta la especifidad de los otros atributos*/
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:0px;
+}
+
+/* estados del html, por ejemplo cuando estan en el estado de hover o encima de un texto cambiar los estilos
+    El border modifica el elemento el outline solo cambia el contorno se dibuja encima 
+*/
+.link{
+    color:black;
+    padding:10px;
+}
+
+.link:hover{ /*modifica un elemento justo cuando se pasa el cursor por encima delelemento*/
+    color: black;
+    border-radius: 5px;
+    background-color:rgb(142 142 142 / 50%);
+}
+
+.link:active{ /* El activate es cuando se da click en el elemento */
+    color: mediumorchid;
+}
+
+#photo_avatar{
+    display:grid;
+    border-radius: 20px;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+
+}
+#photo{
+    align-content: center;
+    align-items: center;
+    
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    display: inline;
+    float:right;
+    padding:20px;
+}
+input:focus{
+    background-color:rgb(175, 228, 175);
+}
+.container{
+    width:250px;
+    height:250px; /*50% del viewport (vh)*/
+    border-radius: 14px;
+    padding-inline-start: 12px;
+    background: red;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
