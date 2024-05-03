@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Portafolio de juan, estudiante en desarrollo de software"><!-- etiqueta de descipcion del contenido de la pagina-->
+    <link rel="icon" type="image/jpg" href="/imges/pablo.jpeg">
+    <title>basics</title>
+    <script src = "/script2.js"></script>
+    <link rel="stylesheet" href="/basicos.css"/>
+</head>
+
+<body>
+    <main></main>
+    
+
+    <header class="my_self" id="my_self">
+       <div>
+            <div id="photo">
+                <a  download href="/imges/pablo.jpeg"> <!--Puedes descargar una imagen agregando el atributo download-->
+                    <img id="photo_avatar" title="Juan" alt="Esta es una imagem de Juan Pablo" src="/imges/pablo.jpeg" height="300" width="230">
+                </a>
+            </div>
+            <h2>Juan Pablo Aristizábal Guzmán</h2>
+            
+            <p>Soy estudiante de 
+                <strong>ingenieria de software</strong>, 
+                curso mi cuarto año de carrera en la Institucion Universitaria Pascual Bravo
+            </p>
+            <div class="social_networks">
+                <a class="social_net" href="https://www.linkedin.com/in/pablo-aristizabal-631678256/" target="_blank">
+                    <img id="image_net" src="/imges/linkedin.png">
+                </a>
+                <a class="social_net" href="https://mail.google.com/mail/u/0/?hl=es#inbox" target="_blank">
+                    <img id="image_net" src="imges/gmail_image.png">
+                </a>
+                <a class="social_net" href="https://github.com/PabloAristizabal" target="_blank">
+                    <img id="image_net" src="imges/github_image.png">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="about" id="my_self">
+        <h2>About</h2>
+        <p>Soy un desarrollador de software, enfocado al desarrollo web es un  area que me interesa para le desarrollo de mi carrera
+            ,actualmente estoy en busca de practicas Universitarias.    
+        </p>
+        <h2>Education</h2>
+        <p>2019-actual</p>
+        <h3>Institucion Universitaria Pascualbrabo</h3>
+        <p>Curso el octavo semetre en ingenieria de software </p>
+    </section>
+
+    
+    <video
+    controls
+    width="400"
+    height="400"
+    autoplay
+    loop
+    muted
+    poster="poster.png">
+    <source src="rabbit320.webm" type="video/webm" />
+    <p>
+      Su navegador no soporta vídeo HTML5. Este es un
+      <a href="rabbit320.mp4">enlace al vídeo</a> alternativo.
+    </p>
+    </video>
+    
+    <dialog id="dialog">
+        <h1>Esto es informacion en un dialog</h1>
+        <p>Esto sera un ejemplo con js no muy complejo</p>
+        <button id="hide">close</button>
+    </dialog>
+    <button id="show">mostrar</button>
+    <script>
+        window.show.addEventListener('click', ()=>{
+            window.dialog.showModal()
+        })
+        window.hide.addEventListener('click', ()=>{
+            window.dialog.close()
+        })
+    </script>
+    
+    <main>
+  
+        <section>
+            <nav id="naving">
+        
+                <a class ="link" href="#Herramientas">Herramientas</a>
+                <a class ="link" href="#iniciar sesion" target="_blank" rel="noreferrer">login</a>
+                <a class ="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">hi</a>   
+            </nav>
+            <h2>Formulario de contacto</h2>
+
+            <form method="post" action="/"> <!--La etiqueta action expecifica la URL donde se mandan los datos -->
+
+                <fieldset> <!-- El elemento fieldset se usa para agrupar elementos relacionados en una seccion logica o conjunto de control de formulario-->
+
+                    <legend>Informacion personal</legend> <!--Indica la informacion que va en el fieldset-->
+                    <div> <!--El div es una opcion para ordenar los inputs, es mejor usar los estilos para esto -->
+                        <label>Nombre:
+                            <input type="text" id="name" name="name" placeholder="Juan Pablo Aristizábal" required>
+                        </label>
+                    </div>
+                    <label>Email:
+                        <input type="email" id="email" name="email" placeholder="Juan.aristi@gmail.com" required>
+                    </label>
+                    
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Informacion Adicional</legend>
+                    
+                    <div>
+                        <label>Relefono:
+                            <input type="tel" name="telefono" placeholder="312676755" required>
+                        </label> 
+                    </div>
+
+                    <div>
+                        
+                        <datalist id="languages"> <!--Caja con diferentes opciones de seleccion-->
+                            <option value="JavaScript"></option> <!--Opciones-->
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                            <option value="C#"></option>
+                        </datalist>
+                        
+                        <label>¿Con que lenguaje quires aprender a programar?
+                            <input list="languages" name="languages">
+                        </label>
+                    
+                    </div>
+
+                </fieldset>
+                
+                <button type="submit">Enviar información</button>
+
+            </form>
+
+        </section>
+  
+        <aside> <!--Informacion adicional no relacionada con el tema central-->
+
+            <h2 id="Herramientas">Herramientas</h2>
+            <ol type="1" reversed start="3">
+                <li class="list_item">HTML</li>
+                <li class="list_item">Javascript</li>
+                <li class="list_item">python</li>
+            </ol>
+
+        </aside>
+
+        <section>
+
+            <h2>preguntas frecuentes</h2>
+
+            <details open>
+                <summary>¿Que estudias?</summary><!--La etiqueta summary pone el texto que se muestra den los detalles, de lo contratio solo mostrara detalles-->
+                <p>Estudio ingenieria De software en la universidad Pascual Bravo</p>
+            </details>
+
+            <details>
+                <summary>¿Cuales son tus hobbies?</summary>
+                <p>Me guastan los video juegos belicos enfocados en aviones y tanques</p>
+            </details>
+
+        </section>
+
+        
+        <section>
+
+            <article>
+               
+                <header>
+                    <h3>La paguina de youtube</h3>
+                    <img style="width:100%; aspect-ratio:958/497;" loading="lazy" src="/imges/youtube.jpeg" alt="captura de youtube">
+                    <!--aspect-tario ordena el tramaño de la imagen sin perder las dimensiones-->
+                    <!--Loading lazy carga la imagen cuando el scrol este a punto de llegar a la imagen la carga y depende de los recursos que tienes-->
+                </header>
+                <p>
+                    Desarrollo de un sitio web corporativo con una interfaz amibable
+                </p>
+                <footer>Tecnologias utilizadas: HTML, CSS, JavaScript</footer>
+            
+            </article>
+
+            <article>
+            
+                <div>
+                    <h3>App para un E-commerce</h3>
+                    <p>Este es el desarrollo de una app para una tienda online con el fin de implementar las tecnologias aprendidas</p>
+                </div>
+            
+            </article>
+
+        </section>
+
+        <div>
+            <h2 id="iniciar sesion">iniciar sesión</h2>
+
+            <label>Nombre de usuario:</label><br>
+            <input><br>
+            <label>Contraseña:</label><br>
+            <input><br>
+            <label>Manteenr iniciada la sesion:</label><br>
+            <button type="submit" id="send">Iniciar sesion con Google</button>
+            <a href="mailto:juan.aristi355@gmail.com">Envíame un correo </a>
+        
+        </div>
+        
+        <section>
+
+            <H1>Tablas</H1>
+            
+            <table>
+                <tr>
+                    <td>Hola, soy tu primera celda.</td>
+                    <td>Soy tu segunda celda.</td>
+                    <td>Soy tu tercera celda.</td>
+                    <td>Soy tu cuarta celda.</td>
+                  </tr>
+            </table>
+        
+        </section>
+
+    </main>
+
+    <span>
+        estp es un texto
+    </span>
+    <span>
+        estp es un texto
+    </span>
+    <center>
+            
+        <div class="container">
+            Funca!
+        </div>
+        <div class="container">
+            Funca!
+        </div>
+        <div class="container">
+            Funca!
+        </div>
+    </center>
+
+    <footer>
+        Portafolio numero uno 2024@
+    </footer>
+
+</body>
+</html>
