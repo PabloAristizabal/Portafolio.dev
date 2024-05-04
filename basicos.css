@@ -98,17 +98,3 @@ body{
     float:right;
     padding:20px;
 }
-input:focus{
-    background-color:rgb(175, 228, 175);
-}
-.container{
-    width:250px;
-    height:250px; /*50% del viewport (vh)*/
-    border-radius: 14px;
-    padding-inline-start: 12px;
-    background: red;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 12px;
-}
