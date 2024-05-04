@@ -1,10 +1,12 @@
 .my_self{
     display:flex;
-    padding: 20px;
-    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
     flex-wrap:wrap;
-    align-content: center;
-    align-items: center;
     max-width: 700px;
     margin: 0 auto 72px;
 }
@@ -21,7 +23,7 @@ h2 {
 p{
     font-family: 'Courier New', Courier, monospace;
     color: rgb(93 93 93 / 100%);
-    padding:0px;
+    padding-right:100px;
 
 }
 #image_net{
@@ -74,19 +76,20 @@ body{
 #photo_avatar{
     display:grid;
     border-radius: 20px;
-    height: 150px;
-    width: 150px;
+    height: 112px;
+    width: 112px;
     justify-content: center;
 
 }
 #photo{
     align-content: center;
     align-items: center;
-    
     background-color: none;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 112px;
     display: inline;
     float:right;
-    padding:20px;
+    padding-top: 20px;
+    padding-left:50px;
+    padding-right: 5px;
 }
