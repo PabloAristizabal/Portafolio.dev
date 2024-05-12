@@ -1,7 +1,5 @@
 .my_self{
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap:1rem;
     padding-right: 5px;
     padding-left: 8px;
