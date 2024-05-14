@@ -89,11 +89,9 @@ body{
     padding-left:10px;
     padding-right: 5px;
     padding: 10 5px;
-    background-color: blue;
 }
 #description_myself{
     width: calc(100% - 132px);
-    background-color: aqua;
     padding: 0 5px;
     box-sizing: border-box;
  }
