@@ -19,10 +19,10 @@ h2 {
     border-radius: 12px; /* currentColor toma el color del texto*/
 }
 p{
-    font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: .875rem;
+    line-height: 1.25rem;
     color: rgb(93 93 93 / 100%);
-    padding: auto;
 }
 #image_net{
     height:26px;
@@ -79,14 +79,19 @@ body{
     justify-content: center;
 
 }
+
 #photo{
+   
     align-content: center;
-    align-items: center;
     height: 140px;
     width: 112px;
-    display: inline;
     float:right;
-    padding-top: 20px;
+    position: absolute;
+    right: 125px; /* Posición desde el borde derecho del contenedor padre */
+    top: 25px;
     padding-left:10px;
     padding-right: 5px;
 }
+#description_myself{
+    width:500px;
+ }
