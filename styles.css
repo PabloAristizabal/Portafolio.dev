@@ -5,18 +5,19 @@
     padding-left: 8px;
     padding-top: 0px;
     flex-wrap:wrap;
-    max-width: 700px;
+    max-width: 620px;
     margin: 0 auto 72px;
 }
-#naving{
-    padding: 20px;
-    background-color:rgba(153 153 153 / 50%);
+
+#about{
+    padding-top: 1px;
 }
-h2 {
+
+h3{
     text-align: left;
-    padding-top:0px;
-    color: rgb(0 0 0 / 100%); /* rgb(0 0 0 / 50%) ->  recomendado el 50% es la opacidad*/
-    border-radius: 12px; /* currentColor toma el color del texto*/
+    color: rgb(0, 0, 0); /* rgb(0 0 0 / 50%) ->  recomendado el 50% es la opacidad*/
+    border-radius: 0px; /* currentColor toma el color del texto*/
+    
 }
 p{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
@@ -24,10 +25,44 @@ p{
     line-height: 1.25rem;
     color: rgb(93 93 93 / 100%);
 }
+h4{
+    line-height: 0.1;
+    color: rgb(65, 63, 63) ;
+}
+.year{
+    text-align:right;
+    align-content: center;
+    height: 40px;
+    width: 110px;
+    float:right;
+    padding-top: 28px;
+    padding-left:0px;
+    padding-right: 1px;
+}
+.education ~ .year{
+    width: calc(100% - 132px);
+    padding: 0 5px;
+    box-sizing: border-box;
+
+}
 #image_net{
     height:26px;
     width:26px;
     
+}
+.skill{
+    background-color:rgb(62, 68, 78);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.skill:hover{
+    background-color: rgb(114, 117, 124);
 }
 .link{ /*sintaxis para dar estilos referenciando al atributo class*/
     color:red;
