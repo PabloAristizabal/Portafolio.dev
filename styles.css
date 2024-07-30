@@ -28,6 +28,10 @@ p{
 h4{
     line-height: 0.1;
     color: rgb(65, 63, 63) ;
+    box-sizing: border-box;
+    white-space: normal;
+        /* Permite el salto de línea */
+    line-height: normal;
 }
 .year{
     text-align:right;
